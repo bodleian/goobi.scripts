@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oai_dc:dc xmlns:dcterms1="http://purl.org/dc/terms/"
+           xmlns:ox="ox"
+           xmlns:dcterms="dcterms"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:oai_dc="oai_dc"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:srw_dc="info:srw/schema/1/dc-schema"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:odl="http://odl.ox.ac.uk/odl-mods-extensions/1.0/"
+           xmlns:mets="http://www.loc.gov/METS/"
+           xmlns:default="http://www.loc.gov/METS/"
+           xmlns:goobi="http://goobi.bodleian.ox.ac.uk"
+           xsi:schemaLocation="oai_dc file:/Q:/itsd/Digital.Bodleian/schema/generated_dc.xsd">
+   <dcterms:identifier xsi:type="ox:uuid">urn:uuid:a2c3c1a3-876d-4b17-9c4d-b470bf834698</dcterms:identifier>
+   <dcterms:source xsi:type="ox:mediaId">urn:uuid:a2c3c1a3-876d-4b17-9c4d-b470bf834698</dcterms:source>
+   <dcterms:type>Page record</dcterms:type>
+   <dcterms:title xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                  xmlns:dcterms="http://dublincore.org/documents/dcmi-terms/"
+                  xmlns:ox="http://vocab.ox.ac.uk/ox/">Opera medicinalia [Italian] Il libro della consolatione della medicine, semplici, solutive.</dcterms:title>
+   <dcterms:identifier xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                       xmlns:dcterms="http://dublincore.org/documents/dcmi-terms/"
+                       xmlns:ox="http://vocab.ox.ac.uk/ox/"
+                       xsi:type="ox:shelfmark">Inc. d. I 4. 1487.1</dcterms:identifier>
+   <dcterms:title>56v</dcterms:title>
+   <ox:sort>116</ox:sort>
+   <ox:folio>56v</ox:folio>
+
+   <dcterms:source xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                   xmlns:dcterms="http://dublincore.org/documents/dcmi-terms/"
+                   xmlns:ox="http://vocab.ox.ac.uk/ox/"
+                   xsi:type="ox:source_mediaid">https://databank.ora.ox.ac.uk/temp___Imaging/datasets/a2c3c1a3-876d-4b17-9c4d-b470bf834698/bbp0116.jpg</dcterms:source>
+   <dcterms:source xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+                   xmlns:dcterms="http://dublincore.org/documents/dcmi-terms/"
+                   xmlns:ox="http://vocab.ox.ac.uk/ox/"
+                   xsi:type="ox:source_mediaid">https://databank.ora.ox.ac.uk/temp___Imaging/datasets/a2c3c1a3-876d-4b17-9c4d-b470bf834698/bbp0116.jp2</dcterms:source>
+
+   <dcterms:isPartOf>urn:uuid:15667816-d9eb-4cba-8952-0cf387eb7a09</dcterms:isPartOf>
+</oai_dc:dc>

@@ -1,0 +1,135 @@
+# Config for goobi steps
+# Save in utf8 without BOM.
+# No spaces in keys!
+
+[general]
+
+# debug, log_max_bytes, log_backup_count and  log_email can be overwritten in the main section of a step
+debug = false												
+
+log_max_bytes = 50000000
+log_backup_count = 4 
+log_email = <SET:EMAIL-ADDRESS> 
+
+# TODO log_folder = /opt/digiverso/logs
+
+mets_file_original_extension = .original.xml
+
+
+[property_inserter]
+debug = true
+
+log = /opt/digiverso/logs/step_property_inserter.log
+log_email_subject = Property Inserter Error
+
+
+[tiff_verify]
+debug = true
+
+log = /opt/digiverso/logs/step_tiff_verify.log
+log_email_subject = Tiff Verify Error
+
+
+[jpeg_create]
+debug = true
+
+log = /opt/digiverso/logs/step_jpeg_create.log
+log_email_subject = JPEG Create Error
+
+
+[jpeg_verify]
+debug = true
+
+log = /opt/digiverso/logs/step_jpeg_verify.log
+log_email_subject = JPEG Verify Error
+
+
+[jpeg2000_create]
+debug = true
+
+log = /opt/digiverso/logs/step_jpeg2000_create.log
+log_email_subject = Jpeg2000 Create Error
+
+
+[jpeg2000_verify]
+debug = true
+
+log = /opt/digiverso/logs/step_jpeg2000_verify.log
+log_email_subject = Jpeg2000 Verify Error
+
+
+[uuid_insert]
+debug = true
+
+log = /opt/digiverso/logs/step_uuid_inserter.log
+log_email_subject = UUID insert Error
+
+
+[update_mets]
+debug = true
+
+log = /opt/digiverso/logs/step_update_mets.log
+log_email_subject = Update Mets Error
+
+databank_url = https://databank.ora.ox.ac.uk
+
+
+[derivative_metadata]
+debug = true
+
+log = /opt/digiverso/logs/step_derivative_metadata.log
+log_email_subject = Metadata Derivatives Error
+
+xsl_folder = /opt/digiverso/goobi/xslt/
+dc_stylesheet = goobi-to-dc-multi.xsl
+
+
+[step_tester]
+debug = true
+
+log = /opt/digiverso/logs/step_tester.log
+log_email_subject = Tester step
+
+
+[archiver]
+debug = true
+
+log = /opt/digiverso/logs/step_archiver.log
+log_email_subject = Archive Error
+
+worker_log = /opt/digiverso/logs/worker_to_databank.log
+
+
+
+[goobi]
+host = 127.0.0.1
+passcode = <SET:GOOBI-PASSCODE>
+
+
+[jhove]
+file= /opt/jhove/jhove
+conf= /opt/jhove/conf/jhove.conf
+
+[exempi]
+file = /usr/local/bin/exempi
+
+[saxon]
+file = /opt/saxon/saxon.jar
+
+
+[databank]
+# Must update /etc/hosts to have 10.0.0.110 direct to databank.ora.ox.ac.uk to avoid SSL certifcate errors.
+host = databank.ora.ox.ac.uk
+username = <SET:USERNAME>
+password = <SET:PASSWORD>
+silo = <SET:SILO>
+
+
+[rabbitmq]
+host = <SET:HOST>
+port = 5672
+virtual_host = <SET:VIRTUAL-HOST>
+username = <SET:USERNAME>
+password = <SET:PASSWORD>
+queue_to_databank = temp___databank_archiver
+
